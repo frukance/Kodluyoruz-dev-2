@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <title>Frukance Ödev Yapıyor</title>
+        <!--stil dosyası tanımladım-->
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <ul>
+            <li><a href="index.html">Ana sayfa</a></li>
+            <li><a href="hakkımızda.html">Hakkımızda</a></li>
+            <li><a href="#urunler">Ürünler</a></li>
+            <li><a href="#referanslar">Referanslar</a></li>
+            <li><a href="iletisim.html">İletişim</a></li>
+        </ul>
+        <div class="kutu">
+            <div id="saat"></div>
+            <h1>Furkan Çelik</h1>
+            <h3>Hakkımda</h3>
+            <p>Merhaba. Ben Furkan Çelik. Balıkesir'de yaşıyorum, Bilgisayar Programcılığı okuyorum 1.sınıfım </p>
+
+            <h2>Sevdiğim Diziler</h2>
+            <h3>Game of thrones</h3>
+            <p> Game of Thrones, David Benioff ve D. B. Weiss tarafından yaratılan ve HBO'da yayımlanan Amerikan fantastik televizyon dizisidir. George R. R. Martin'in epik fantezi serisi Buz ve Ateşin Şarkısı'ndan uyarlanmış olan dizi, adını serinin ilk kitabından almaktadır.</p>
+           <a href=" https://www.imdb.com/title/tt0944947/"target="_blank"><strong>İMDB.COM</strong></a>
+            <h3>Ve diğerleri</h3>
+            
+    <!--ve sevdiğim dizileri listeledim-->
+            <ol type="I"> 
+
+                <li>Dexter</li>
+                <li>Black Mirror</li>
+                <li>Rick and Morty</li>
+                <li>Ragnarok</li>
+            </ol>
+
+                <ol>
+                <h2>SEVDİĞİM KİTAPLAR</h2>
+                <li>Otostopçunun Galaksi Rehberi</li>
+                <li>Cesur Yeni Dünya</li>
+                <li>Dinin Kökenleri</li>
+
+                <a href="https://www.goodreads.com/book/show/35668189-otostop-unun-galaksi-rehberi"target="_blank"><strong>GOODREADS.COM</strong></a>
+
+            </ol>
+            
+        </div>
+        <script>
+            async function getData() {
+    const response = await fetch('http://worldtimeapi.org/api/timezone/Europe/Istanbul')
+    const data = await response.json();
+    document.getElementById("saat").innerHTML = data.datetime.substring(11,19);
+  }
+
+  setInterval(getData, 1000);
+        </script>
+
+
+<img src="https://p77-sign-va.tiktokcdn.com/tos-maliva-avt-0068/2f200242b45c5c8d5b674b434d706cfb~c5_720x720.jpeg?x-expires=1657749600&x-signature=rQ5tnUlrv9bYxxYaZB%2FFfwpky5A%3D" alt="">
+
+
+ <img src="https://picsum.photos/200/300" alt="">
+
+ 
+
+</body>
+</html>
+
